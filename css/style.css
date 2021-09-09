@@ -1,0 +1,108 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/lato-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/lato-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/lato-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+html{
+    box-sizing: border-box;
+    }
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+.wrapper {
+    max-width: 600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*Header style start*/
+
+.header-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 48px;
+    margin-bottom: 30px;
+
+}
+
+.my_foto{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+.title-header{
+    font-size: 28px;
+    line-height: 28px;
+    text-align: left;
+
+}
+/*Header style end*/
+
+/*My_cv style start*/
+
+.my-cv{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.my-cv-contacts{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    margin-right: 25px;
+    justify-content: flex-start;
+
+}
+.contacts{
+font-size: 11px;
+
+}
+.e-mail{
+font-size: 11px;
+}
+
+.my-cv-main{
+    display: flex;
+    flex-direction: column;
+    max-width: 225px;
+}
+/*My_cv style end*/

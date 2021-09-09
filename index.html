@@ -2,12 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Filin Sergey</title>
+     <link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<!-- Header start -->
+<header class="header">
+    <div class="wrapper">
+        <div class="header-wrapper">
+            <img src="./img/unnamed.jpg" alt="my_foto" class="my_foto">
+            <h1 class="title-header">Sergey Filin</h1>
+
+        </div>
+    </div>
+</header>
+<!-- Header end -->
+
+<main class="main">
+    <div class="wrapper">
+        <!-- My_cv start -->
+        <section class="my-cv">
+            <div class="my-cv-contacts">
+                <h2 class="contacts">Contacts</h2>
+                <ul class="e-mail">
+                <li>f.sergey7878@gmail.com</li>
+                </ul>
+            </div>
+            <div class="my-cv-main">
+                <p class="about_me">
+                    I have extensive experience in various companies. Mainly sales and
+                    banking. I am engaged in web development as a hobby. I wanted to
+                    make this my main occupation.
+                </p>
+                <ul class="skills">
+                    <li>JS</li>
+                    <li>HTML & CSS</li>
+                    <li>Python & Django</li>
+                    <li>React & React Native</li>
+                    <li>Git</li>
+                    <li>Figma</li>
+                    <li>Photoshop</li>
+                </ul>
+                <code class="sample_code">
+                    <pre>
+  function showPrimes(n) {
+  nextPrime: for (let i = 2; i < n; i++) {
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) continue nextPrime;
+    }
+    alert( i );
+      }
+    }
+                    </pre>
+                </code>
+                <p class="work_experience">
+                    There is a small site in Django that I made for my company:<br>
+                    https://stroisipdom.ru
+                </p>
+                <p class="education">
+                    State University of Management, Moscow, specialization - financial manager.
+                </p>
+                <p class="language">
+                    English Intermediate (B1)
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- My_cv end -->
+    </div>
+</main>
 
 </body>
 </html>
