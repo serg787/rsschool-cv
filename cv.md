@@ -1,4 +1,4 @@
-# Filin Sergey
+#  Filin Sergey
 
 ## Contacts:
 -   [f.sergey7878@gmail.com](mailto:f.sergey7878@gmail.com)
@@ -8,14 +8,13 @@
     make this my main occupation.
 
 ## Skills:
--   JS
--   HTML & CSS
--   Python
--   Django
--   React & React Native
--   Git
--   Figma
--   Photoshop
+- JS
+- HTML & CSS
+- Python & Django
+- React & React Native
+- Git
+- Figma
+- Photoshop
 
 ## Sample code:
 ```
