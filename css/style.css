@@ -1,0 +1,247 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/lato-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/lato-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/lato-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+
+.wrapper {
+    max-width: 700px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+/*Header style start*/
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 48px;
+    background-color: #54de54;
+
+}
+
+.my_foto {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-right: 160px;
+    margin-left: 5px;
+}
+
+.title-header {
+    font-size: 35px;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+/*Header style end*/
+
+/*My_cv style start*/
+
+.my-cv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: rgba(149, 149, 173, 0.16);
+    padding-top: 30px;
+
+}
+
+.my-cv-contacts {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-right: 50px;
+    justify-content: flex-start;
+
+}
+
+.contacts {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-left: 5px;
+
+}
+
+.e-mail li::before {
+    content: "";
+    background: url("../svg/mail.svg") no-repeat left;
+    padding-left: 25px;
+    padding-bottom: 9px;
+    margin-left: 5px;
+}
+
+.my-cv-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    justify-content: flex-start;
+}
+
+.about_myself {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #006DFE;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+.about_me {
+    margin-bottom: 10px;
+}
+
+.my_skills {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.skills {
+    margin-bottom: 10px;
+}
+
+.skills li::before {
+    content: "";
+    background: url("../svg/check.svg") no-repeat left;
+    padding-left: 25px;
+    padding-bottom: 9px;
+}
+
+.code-title {
+    font-size: 19px;
+    text-transform: uppercase;
+
+}
+.section-title-code::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #006DFE;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -25px
+
+}
+
+
+pre{
+    max-height: 206px;
+}
+
+.my_experience {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.work_experience {
+    margin-bottom: 10px;
+}
+
+.my_education {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.education {
+    margin-bottom: 10px;
+}
+
+.my_language {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.language {
+    margin-bottom: 20px;
+}
+
+/*My_cv style end*/
+
+/*Footer style start*/
+
+
+.my_footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 30px;
+    background-color: #54de54;
+}
+
+.github {
+    background: url("../svg/github.svg") no-repeat left;
+    padding-left: 25px;
+    margin-left: 5px;
+
+}
+
+.rsschool {
+    background: url("../svg/rs_school_js.svg") no-repeat left;
+    padding-left: 60px;
+    margin-right: 5px;
+}
+
+/*Footer style end*/
