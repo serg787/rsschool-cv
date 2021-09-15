@@ -10,13 +10,45 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-    <base target="_blank">
 
 </head>
 <body>
 <!-- Header start -->
 <header class="header">
     <div class="wrapper">
+
+        <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#about" class="header__link js-scroll">About myself</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#scills" class="header__link js-scroll">Skills</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#code" class="header__link js-scroll">Sample code</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#work" class="header__link js-scroll">Work experience</a>
+                        </li>
+                         <li class="header__item">
+                            <a href="#education" class="header__link js-scroll">Education</a>
+                        </li>
+                         <li class="header__item">
+                            <a href="#language" class="header__link js-scroll">Language</a>
+                        </li>
+					</ul>
+					<div class="header__nav-close">
+						<span class="header__nav-close-line"></span>
+						<span class="header__nav-close-line"></span>
+					</div>
+				</nav>
+				<div class="header__burger burger">
+					<span class="burger__line burger__line_first"></span>
+					<span class="burger__line burger__line_second"></span>
+					<span class="burger__line burger__line_third"></span>
+				</div>
+
         <div class="header-wrapper">
             <img src="./img/Photo.jpg" alt="my_foto" class="my_foto">
             <h1 class="title-header">Sergey Filin</h1>
@@ -37,14 +69,14 @@
                 </ul>
             </div>
             <div class="my-cv-main">
-                <h2 class="about_myself section-title">About myself</h2>
+                <h2 class="about_myself section-title" id="about">About myself</h2>
 
                 <p class="about_me">
                     I have extensive experience in various companies. Mainly sales and
                     banking. I am engaged in web development as a hobby. I wanted to
                     make this my main occupation.
                 </p>
-                <h2 class="my_skills section-title">Skills</h2>
+                <h2 class="my_skills section-title" id="scills">Skills</h2>
                 <ul class="skills">
                     <li>JS</li>
                     <li>HTML & CSS</li>
@@ -54,7 +86,7 @@
                     <li>Figma</li>
                     <li>Photoshop</li>
                 </ul>
-                <h2 class="code-title section-title-code">sample code</h2>
+                <h2 class="code-title section-title-code" id="code">sample code</h2>
                 <pre>
                 <code class="sample_code">
 function showPrimes(n) {
@@ -67,16 +99,16 @@ function showPrimes(n) {
 }
                 </code>
                     </pre>
-                <h2 class="my_experience section-title">Work experience</h2>
+                <h2 class="my_experience section-title" id="work">Work experience</h2>
                 <p class="work_experience">
                     There is a small site in Django that I made for my company:<br>
-                    <a href="https://stroisipdom.ru">https://stroisipdom.ru</a>
+                    <a href="https://stroisipdom.ru" target="_blank">https://stroisipdom.ru</a>
                 </p>
-                <h2 class="my_education section-title">Education</h2>
+                <h2 class="my_education section-title" id="education">Education</h2>
                 <p class="education">
                     State University of Management, Moscow, specialization - financial manager.
                 </p>
-                <h2 class="my_language section-title">Language</h2>
+                <h2 class="my_language section-title" id="language">Language</h2>
                 <p class="language">
                     English Intermediate (B1)
                 </p>
@@ -98,6 +130,6 @@ function showPrimes(n) {
     </div>
 
 </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
