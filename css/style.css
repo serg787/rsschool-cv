@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* lato-regular - latin */
 @font-face {
   font-family: 'Lato';
@@ -28,11 +35,13 @@
 
 
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 body {
@@ -53,14 +62,25 @@ body {
 
 /*Header style start*/
 
+.header{
+    background-color: #54de54;
+}
+
 .header__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 50px;
     margin-top: 40px;
-
+    padding: 0 10px 0 10px;
 }
 
 .header__item{
@@ -70,7 +90,7 @@ body {
     margin-right: 0;
 }
 .header__link{
-    color: #0e2544;
+    color: black;
     text-decoration: none;
 }
 .header__link:hover, .header__link:focus, .header__link:active{
@@ -99,22 +119,32 @@ body {
 
 .burger__line_second{
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .burger__line_third{
     bottom: 0;
 }
 
-
 .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     background-color: #54de54;
-
 }
 
 .my_foto {
@@ -123,6 +153,7 @@ body {
     border-radius: 50%;
     margin-right: 160px;
     margin-left: 5px;
+    padding: 5px;
 }
 
 .title-header {
@@ -135,31 +166,43 @@ body {
 
 /*Header style end*/
 
+.main{
+    background-color: #F0F0F0;
+}
+
 /*My_cv style start*/
 
 .my-cv {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: rgba(149, 149, 173, 0.16);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding-top: 30px;
-
 }
 
 .my-cv-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 200px;
     margin-right: 50px;
-    justify-content: flex-start;
-
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .contacts {
     font-size: 19px;
     text-transform: uppercase;
     margin-left: 5px;
-
 }
 
 .e-mail li::before {
@@ -171,10 +214,17 @@ body {
 }
 
 .my-cv-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 350px;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .about_myself {
@@ -217,8 +267,8 @@ body {
 .code-title {
     font-size: 19px;
     text-transform: uppercase;
-
 }
+
 .section-title-code::after {
     display: block;
     content: '';
@@ -228,10 +278,8 @@ body {
     position: relative;
     bottom: 0;
     left: 0;
-    margin-bottom: -25px
-
+    margin-bottom: -25px;
 }
-
 
 pre{
     max-height: 206px;
@@ -272,13 +320,27 @@ a {
 
 /*Footer style start*/
 
+.footer{
+    max-width: 100%;
+    background-color: #54de54;
+}
 
 .my_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 60px;
     margin-bottom: 30px;
     background-color: #54de54;
@@ -305,8 +367,8 @@ a {
     .header__burger {
         display: block;
         position: absolute;
-        top: 6%;
-        left: 75%;
+        top: 37px;
+        left: 80%;
     }
 
     .header__nav{
@@ -349,6 +411,7 @@ a {
         top: 20px;
         right: 20px;
         z-index: 11;
+
     }
     .header__nav-close-line{
         display: block;
@@ -369,8 +432,44 @@ a {
                 transform: translateY(-50%) rotate(-45deg);
     }
 
-    .my_foto{
+    .my_foto {
+        margin-right: 50px;
+        padding: 5px;
+    }
+    .e-mail{
         padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .my_foto {
+        margin-right: 15px;
+        padding: 5px;    }
+
+    .title-header {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 410px){
+    .header-wrapper{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .title-header{
+        padding-bottom: 10px;
+    }
+    .my_footer{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
 }
